@@ -1,12 +1,13 @@
 package main
 
 import (
-	"github.com/gnur/go-piratebay"
 	"bufio"
-	"os"
 	"fmt"
-	"strconv"
+	"os"
 	"os/exec"
+	"strconv"
+
+	"github.com/gnur/go-piratebay"
 )
 
 var pirateBay piratebay.Piratebay
@@ -22,7 +23,6 @@ func search(search string) []piratebay.Torrent {
 func init() {
 	pirateBay = piratebay.New("https://thepiratebay.org")
 }
-
 
 func main() {
 	fmt.Print("Escribe qué quieres buscar: ")
